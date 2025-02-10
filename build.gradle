@@ -14,13 +14,8 @@ repositories {
             password = System.getenv("SDC_REPO_USER_TOKEN")
         }
     }
+    mavenLocal()
     mavenCentral()
-    maven {
-        url 'https://oss.sonatype.org/content/repositories/snapshots/'
-    }
-    maven {
-        url 'http://dl.bintray.com/andsel/maven'
-    }
 }
  
 dependencies {
